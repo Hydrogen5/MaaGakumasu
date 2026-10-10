@@ -67,6 +67,10 @@
           "enabled": true
         },
         {
+          "name": "支援卡升级",
+          "enabled": false
+        },
+        {
           "name": "领取奖励",
           "enabled": true,
           "option": {

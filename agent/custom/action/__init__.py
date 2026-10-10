@@ -3,6 +3,7 @@ from .Counter import *
 from .produce import *
 from .challenge import *
 from .SupportCards import *
+from .SupportCardsLevelUp import *
 
 __all__ = [
     "ShoppingCoinGachaAuto",
@@ -13,6 +14,7 @@ __all__ = [
     "ProduceChooseNIAEventAuto",
     "ProduceCardsAuto",
     "SupportCardsAuto",
+    "SupportCardsLevelUpAuto",
     "ProduceChooseWorkAuto",
     "ProduceChooseOptionsAuto",
     "ProduceKeepDrinkAuto",

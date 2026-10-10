@@ -151,6 +151,16 @@
       "label": "$每周免费初星包"
     },
     {
+      "name": "支援卡升级",
+      "entry": "SupportCardsLevelUp",
+      "default_check": false,
+      "doc": "$支援卡升级说明",
+      "resource": [
+        "官服"
+      ],
+      "label": "$支援卡升级"
+    },
+    {
       "name": "领取奖励",
       "entry": "Award",
       "option": [

@@ -1,0 +1,229 @@
+{
+    "SupportCardsLevelUp": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "SupportCardsLevelUpAuto"
+            }
+        }
+    },
+    "SupportCardsLevelUpHomeIdol": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["support_cards/level_up/home_idol.png"],
+                "roi": [170, 1060, 145, 180],
+                "threshold": 0.88
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpIdolSupport": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["support_cards/level_up/idol_support.png"],
+                "roi": [245, 850, 220, 210],
+                "threshold": 0.88
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpListDetail": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["support_cards/level_up/list_detail.png"],
+                "roi": [235, 1020, 250, 130],
+                "threshold": 0.88
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpAscending": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["support_cards/level_up/ascending.png"],
+                "roi": [615, 940, 100, 150],
+                "threshold": 0.85
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpDetailUpgrade": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["support_cards/level_up/detail_upgrade.png"],
+                "roi": [80, 1020, 255, 130],
+                "threshold": 0.88
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpHomeIcon": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["support_cards/level_up/home_icon.png"],
+                "roi": [35, 1160, 105, 120],
+                "threshold": 0.88
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpConfirmUpgrade": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["support_cards/level_up/confirm_upgrade.png"],
+                "roi": [380, 1100, 250, 170],
+                "threshold": 0.88
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpText": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [".*"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpCurrentLevel": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["[Ll][Vv]\\s*\\d+\\s*/\\s*\\d+"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpLevelChange": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["[Ll][Vv]\\s*\\d+\\s*→\\s*[Ll][Vv]\\s*\\d+"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpSortTitle": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["表示順"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpSortLevel": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["^[Ll][Vv]$"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpDecide": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["^決定$"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpCancel": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["キャンセル"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpBalance": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["^[0-9][0-9,]*$"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "SupportCardsLevelUpCost": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["^[-−][0-9]+$"],
+                "roi": [0, 0, 720, 1280]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    }
+}
